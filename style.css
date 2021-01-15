@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    background-image: url(img/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;  
+}
+.titulo{
+    font-size: 35px;
+    color: #8291C3;
+    font-family: 'Xanh Mono', monospace;
+}
+
+.grande{
+    font-size: 25px;
+    color: #949aaf;
+    font-family: 'Xanh Mono', monospace;
+}
+
+.div{
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(6, minmax(54px, auto));
+    grid-template-columns: repeat(4, 54px);
+    grid-gap: 4px;
+    background-color: rgb(60, 67, 89, 0.25);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(170%) blur(20px);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translate(-50%, -55%);
+    
+}
+
+.div > button{
+    touch-action: manipulation;
+  font-family: "Inconsolata", monospace;
+  border: none;
+  line-height: 55px;
+  background-color:  rgb(60, 67, 89, 0.25);
+  font-size: 20px;
+  transition: 0.3s;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  font-weight: 300px;
+  color: white;
+  font-family: 'Xanh Mono', monospace;}
+
+
+.div > button:active{
+    color: rgb(12, 2, 2);
+    background-color: rgba(20, 18, 18, 0.11);
+    transform: scale(0.5);
+}
+
+.div > button:hover{
+    filter: brightness(2);
+    transform: scale(1.1);
+    
+}
+
+.resultado{
+    border-radius: 13px;
+    height: 50px;
+    border: none;
+    background: #3d4961;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+    font-family: 'Xanh Mono', monospace;
+}
+
+.operador{
+    background-color: rgb(61, 78, 105, 0.7) !important;
+    color:rgb(60, 67, 89, 0.25);
+}
+
+.resultado{
+    grid-column: 1/5;
+    
+}
+.ac {
+    grid-column: 1/5;
+  }
+ 
+.cero {
+    grid-column: 1/4;
+    grid-row: 8;
+}
+.multiplicacion {
+    grid-column: 4;
+    grid-row: 4;
+}
+.menos {
+    grid-column: 4;
+    grid-row: 6;
+}
+.mas {
+    grid-column: 4;
+    grid-row: 5;
+}
+.igual {
+    grid-column: 4;
+    grid-row: 8;
+}
